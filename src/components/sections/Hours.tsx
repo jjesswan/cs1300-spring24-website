@@ -31,7 +31,7 @@ export default function Hours() {
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
-        px={{ md: "20%", base: "5rem" }}
+        px={{ md: "10%",lg: "20%", base: "3rem" }}
       >
         <Text variant="subHeader">hours</Text>
         <Text variant="subscript" mb="1.5rem" w="70%">

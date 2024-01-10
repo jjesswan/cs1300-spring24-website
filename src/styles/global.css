@@ -32,7 +32,7 @@ table {
 }
 
 body{
-    background-color: #FFC747 !important;
+    background-color: black !important;
     overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ a{
  /* SCROLLBAR */
 
 ::-webkit-scrollbar-thumb:vertical {
-    background: black;
+    background: white;
     border-radius: 15px;
     height: 20px;
 }

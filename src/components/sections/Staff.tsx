@@ -27,13 +27,15 @@ export default function Staff() {
       <Flex
         justifyContent={"flex-start"}
         alignItems={"center"}
-        bg="darkGrey"
+        bg="#F8F8F8"
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
         px={{ md: "20%", base: "5rem" }}
       >
-        <Text variant="subHeader" color="white">staff</Text>
+        <Text variant="subHeader" color="white">
+          staff
+        </Text>
         <Text variant="subscript" mb="1.5rem" w="70%">
           We highly recommend bookmarking this schedule, as this contains all
           information regarding assignments, lectures, studios, and readings.

@@ -118,6 +118,20 @@ const components = {
           transition: "all 0.4s",
         },
       }),
+      sideLink: () => ({
+        fontFamily: fonts.body,
+        fontSize: "1.5rem",
+        fontWeight: "500",
+        letterSpacing: "-.05rem",
+        textDecoration: "none",
+        transition: "all 0.4s",
+        color: "white",
+        _hover: {
+          color: "mediumGrey",
+          textDecoration: "none",
+          transition: "all 0.4s",
+        },
+      }),
       helpfulLink: () => ({
         fontFamily: fonts.body,
         fontSize: ".9rem",
@@ -163,8 +177,10 @@ const components = {
       subtitle: () => ({
         fontFamily: fonts.body,
         fontWeight: "800",
-        fontSize: "2rem",
+        fontSize: {sm:"2rem", base:"1.5rem"},
         letterSpacing: "-.1rem",
+        lineHeight:"100%",
+        textAlign: "center",
         color: colors.darkGrey,
       }),
       body: () => ({

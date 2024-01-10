@@ -22,11 +22,11 @@ export default function Assignment() {
   return (
     <Card
       bg="darkGrey"
-      w="15rem"
+      w="20rem"
       alignItems={"center"}
       justifyContent={"center"}
       direction="column"
-      py="1rem"
+      padding="1rem"
     >
       <Stack>
         <Text variant="tinyHeader" textAlign={"center"}>
@@ -34,16 +34,11 @@ export default function Assignment() {
         </Text>
         {readings.map((r, key) => (
           <Link to={r.link}>
-            <Button
-              variant="solidLinkSmall"
-              bg="yellow"
-              color="darkGrey"
-            >
+            <Button variant="solidLinkSmall" bg="yellow" color="darkGrey">
               {r.title}
             </Button>
           </Link>
         ))}
-
       </Stack>
     </Card>
   );

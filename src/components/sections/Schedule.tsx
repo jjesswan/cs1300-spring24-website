@@ -23,13 +23,20 @@ export default function Schedule() {
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
-        px={{ md: "20%", base: "5rem" }}
+        px={{ md: "10%", lg: "20%", base: "3rem" }}
       >
         <Text variant="subHeader" mb="1.5rem">
           current to-do's
         </Text>
 
-        <Flex w="100%" justifyContent={"space-evenly"} mb="3rem">
+        <Flex
+          w="100%"
+          justifyContent={{ md: "space-evenly", base: "center" }}
+          alignItems={{ md: "center", base: "center" }}
+          mb="3rem"
+          flexDir={{ md: "row", base: "column" }}
+          gap="1rem"
+        >
           <Assignment />
           <Studio />
           <Readings />
@@ -45,19 +52,16 @@ export default function Schedule() {
           Canvas in the Files and Media Library folders, respectively. The links
           in the schedule below are added later only for convenience.
         </Text>
-        <Link
-          to="/"
-        >
+        <Link to="/">
           <Button
             variant="solidLink"
             bg="yellow"
-            borderColor={"lightBlue"}
-            color="darkGrey"
+            borderColor={"transparent"}
+            color="white"
             _hover={{
-              color:"black",
+              color: "black",
               borderColor: "black",
-              bg: "transparent"
-
+              bg: "transparent",
             }}
           >
             SCHEDULE LINK

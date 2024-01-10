@@ -18,100 +18,119 @@ export default function Links() {
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
+        w="100vw"
       >
         <Text variant="subHeader" color="white">
           helpful links
         </Text>
-        <Flex mt="1rem" justifyContent={"space-evenly"} w="80%">
+        <Flex
+          mt="1rem"
+          justifyContent={"center"}
+          w="90%"
+          flexDir={{ sm: "row", base: "column" }}
+          gap={"1rem"}
+        >
           {/* WEBSITES */}
-          <Flex flexDir={"column"} alignItems={"center"}>
-            <Text variant="capitalBody" color="darkBlue" mb=".5rem">
-              WEBSITES
-            </Text>
-            <Link to="/">
-              <Button variant="solidLink" mb="1rem">
-                CANVAS
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLink">EDSTEM</Button>
-            </Link>
+          <Flex
+            flexDir={{ md: "row", base: "column" }}
+            alignItems={"center"}
+            gap={"1rem"}
+          >
+            <Flex flexDir={"column"} alignItems={"center"}>
+              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+                WEBSITES
+              </Text>
+              <Link to="/">
+                <Button variant="solidLink" mb="1rem">
+                  CANVAS
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLink">EDSTEM</Button>
+              </Link>
+            </Flex>
+
+            {/* COURSE DOCS */}
+            <Flex flexDir={"column"} alignItems={"center"}>
+              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+                Course Docs
+              </Text>
+              <Link to="/">
+                <Button variant="outlineLink" mb="1rem">
+                  Syllabus
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="outlineLink" mb="1rem">
+                  Software Guide
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="outlineLink">Deployment Guide</Button>
+              </Link>
+            </Flex>
           </Flex>
 
-          {/* COURSE DOCS */}
-          <Flex flexDir={"column"} alignItems={"center"}>
-            <Text variant="capitalBody" color="darkBlue" mb=".5rem">
-              Course Docs
-            </Text>
-            <Link to="/">
-              <Button variant="outlineLink" mb="1rem">
-                Syllabus
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="outlineLink" mb="1rem">
-                Software Guide
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="outlineLink">Deployment Guide</Button>
-            </Link>
-          </Flex>
+          <Flex
+            flexDir={{ md: "row", base: "column" }}
+            alignItems={"center"}
+            gap={"1rem"}
+          >
+            {/* COURSE FORMS */}
+            <Flex flexDir={"column"} alignItems={"center"}>
+              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+                ASSIGNMENTS
+              </Text>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Assignment Handin
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Studio Handin
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Late Pass Form
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Regrade Request Form
+                </Button>
+              </Link>
+            </Flex>
 
-          {/* COURSE FORMS */}
-          <Flex flexDir={"column"} alignItems={"center"}>
-            <Text variant="capitalBody" color="darkBlue" mb=".5rem">
-              ASSIGNMENTS
-            </Text>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Assignment Handin
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Studio Handin
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Late Pass Form
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Regrade Request Form
-              </Button>
-            </Link>
-          </Flex>
-
-          {/* LOGISTICAL */}
-          <Flex flexDir={"column"} alignItems={"center"}>
-            <Text variant="capitalBody" color="darkBlue" mb=".5rem">
-              logistical
-            </Text>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Studio Swap Form
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Feedback Form
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
-                <TiDownloadOutline />
-                Dean's/Doctor's Note
-              </Button>
-            </Link>
+            {/* LOGISTICAL */}
+            <Flex flexDir={"column"} alignItems={"center"}>
+              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+                logistical
+              </Text>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Studio Swap Form
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Feedback Form
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="solidLinkSmall" gap=".2rem" mb=".5rem">
+                  <TiDownloadOutline />
+                  Dean's/Doctor's Note
+                </Button>
+              </Link>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
