@@ -37,6 +37,7 @@ export default function StaffMember(props: StaffInfo) {
         borderRadius={"1rem"}
         onMouseOver={() => setImg(props.real)}
         onMouseLeave={() => setImg(props.pooh)}
+        padding="1.5rem"
       />
       <Stack
         alignItems={"flex-start"}

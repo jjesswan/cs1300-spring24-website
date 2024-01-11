@@ -38,9 +38,9 @@ const components = {
         fontWeight: "500",
         border: "2px solid",
         borderRadius: ".8rem",
-        borderColor: colors.darkBlue,
+        borderColor: colors.mediumGrey,
         letterSpacing: ".02rem",
-        color: colors.darkBlue,
+        color: colors.mediumGrey,
         width: "10rem",
         bg: "white",
         _hover: {
@@ -178,7 +178,7 @@ const components = {
       subtitle: () => ({
         fontFamily: fonts.body,
         fontWeight: "800",
-        fontSize: {sm:"2rem", base:"1.5rem"},
+        fontSize: {sm:"2rem", base:"1rem"},
         letterSpacing: "-.1rem",
         lineHeight:"100%",
         textAlign: "center",
