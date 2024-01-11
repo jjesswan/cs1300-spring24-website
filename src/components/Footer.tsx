@@ -29,7 +29,9 @@ export default function Footer() {
       h="2rem"
       bg="black"
     >
-      <Text variant="body" color="yellow" fontSize={".5rem"}> © Brown University CSCI 1300 Spring 2024</Text>
+      <Text variant="body" color="yellow" fontSize={".5rem"} textAlign={"right"}>
+         © Brown University CSCI 1300 Spring 2024 <br></br>
+         Website by Jess | Graphics by Caitlin</Text>
     </Flex>
   );
 }
