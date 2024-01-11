@@ -157,11 +157,10 @@ const components = {
       // HEADER
       bigHeader: () => ({
         fontFamily: fonts.heading,
-        letterSpacing: "-.2rem",
         fontWeight: "800",
-        fontSize: "10rem",
-        display: "flex",
+        fontSize: "4rem",
         color: "black",
+        lineHeight: "100%"
       }),
       subHeader: () => ({
         fontFamily: fonts.heading,
@@ -178,8 +177,8 @@ const components = {
       subtitle: () => ({
         fontFamily: fonts.body,
         fontWeight: "800",
-        fontSize: {sm:"2rem", base:"1rem"},
-        letterSpacing: "-.1rem",
+        fontSize: {sm:"1.5rem", base:"1rem"},
+        letterSpacing: "-.05rem",
         lineHeight:"100%",
         textAlign: "center",
         color: colors.darkGrey,

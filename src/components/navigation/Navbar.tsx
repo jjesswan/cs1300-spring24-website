@@ -34,6 +34,8 @@ export default function Navbar() {
         bg={bgColor}
         m={0}
         transition={"all .2s"}
+        borderBottomRadius={"1rem"}
+        boxShadow={"md"}
       >
         <Flex>
           <HashLink smooth to="/#top" variant="navLink" pr="0">

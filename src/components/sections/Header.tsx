@@ -18,15 +18,21 @@ export default function Header() {
       >
         <Image
           objectFit="contain"
-          maxWidth={{md: "60%", base: "90vw"}}
+          maxWidth={{ md: "50%", base: "90vw" }}
           src="/images/Header final.png"
         />
         <Flex flexDir={"column"} alignItems={"center"}>
-          <Text variant="subtitle" color="white">
-            welcome to cs1300:
+          <Text variant="bigHeader" color="#5D3011">
+            welcome to
           </Text>
-          <Text variant="subtitle" mb="1rem" color="white">
-            user interfaces and user experiences!
+
+          <Text
+            variant="bigHeader"
+            color="white"
+            textShadow={"#5D3011 0px 2px 3px"}
+            mb="2rem"
+          >
+            csci1300
           </Text>
           <Text variant="capitalBody" color="red">
             tues/thurs 1-2:20pm

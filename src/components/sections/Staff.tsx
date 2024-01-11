@@ -27,7 +27,7 @@ export default function Staff() {
         gap="2rem"
       >
         <Text variant="subHeader" color="darkestBlue">
-          staff
+          pooh + friends!
         </Text>
         <Flex
           alignItems={"center"}
