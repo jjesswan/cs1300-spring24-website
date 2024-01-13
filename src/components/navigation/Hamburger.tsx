@@ -30,6 +30,8 @@ export default function Hamburger(props: SideNavProps) {
       position={"fixed"}
       zIndex={"sticky"}
       display={{ md: "none", base: "flex" }}
+      role="navigation"
+      aria-label="mobile navigation toggle"
     >
       <Flex
         justifyContent={"space-between"}

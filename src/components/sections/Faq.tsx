@@ -21,6 +21,8 @@ export default function Faq() {
         pt="3rem"
         pb="5rem"
         px={{ md: "20%", base: "5rem" }}
+        role="complementary"
+        aria-label="faq section"
       >
         <Text variant="subHeader">faq</Text>
 

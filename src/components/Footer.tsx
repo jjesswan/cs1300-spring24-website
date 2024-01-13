@@ -28,6 +28,8 @@ export default function Footer() {
       pr="1rem"
       h="2rem"
       bg="black"
+      role="contentinfo"
+      aria-label="website credit"
     >
       <Text variant="body" color="yellow" fontSize={".5rem"} textAlign={"right"}>
          © Brown University CSCI 1300 Spring 2024 <br></br>

@@ -27,6 +27,8 @@ export default function Assignment() {
       justifyContent={"center"}
       direction="column"
       padding="1rem"
+      role="complementary"
+      aria-label="current studio information"
     >
       <Stack>
         <Text variant="tinyHeader" textAlign={"center"}>

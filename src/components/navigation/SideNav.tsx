@@ -27,6 +27,8 @@ export default function SideNav(props: SideNavProps) {
       position={"fixed"}
       zIndex={"sticky"}
       transition={"all .4s"}
+      role="navigation"
+      aria-label="mobile navigation"
     >
       <Flex
         position={"fixed"}

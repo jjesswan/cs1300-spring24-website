@@ -24,6 +24,8 @@ export default function Schedule() {
         pt="3rem"
         pb="5rem"
         px={{ md: "10%", lg: "20%", base: "3rem" }}
+        role="complementary"
+        aria-label="current events section"
       >
         <Text variant="subHeader" mb="1.5rem">
           current to-do's

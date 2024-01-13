@@ -32,6 +32,8 @@ export default function Hours() {
         pt="3rem"
         pb="5rem"
         px={{ md: "10%",lg: "20%", base: "3rem" }}
+        role="complementary"
+        aria-label="ta hours section"
       >
         <Text variant="subHeader">hours</Text>
         <Text variant="subscript" mb="1.5rem" w="70%">

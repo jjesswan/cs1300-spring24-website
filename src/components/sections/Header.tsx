@@ -15,6 +15,8 @@ export default function Header() {
         flexDir={"column"}
         py="5rem"
         w="100vw"
+        role="banner"
+        aria-label="banner"
       >
         <Image
           objectFit="contain"

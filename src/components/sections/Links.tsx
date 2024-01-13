@@ -19,6 +19,8 @@ export default function Links() {
         pt="3rem"
         pb="5rem"
         w="100vw"
+        role="complementary"
+        aria-label="helpful links section"
       >
         <Text variant="subHeader" color="white">
           helpful links

@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div role="main">
       <Header />
       <Links />
       <Schedule/>

@@ -23,7 +23,7 @@ export default function Navbar() {
 
   
   return (
-    <Box position={"fixed"} zIndex={"sticky"} display={{md: "flex", base: "none"}}>
+    <Box position={"fixed"} zIndex={"sticky"} display={{md: "flex", base: "none"}} role="navigation" aria-label="desktop navigation">
       <Flex
         justifyContent={"space-between"}
         alignItems={"center"}

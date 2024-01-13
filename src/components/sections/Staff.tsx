@@ -25,8 +25,10 @@ export default function Staff() {
         pb="5rem"
         px={{ md: "10%", lg: "15%", base: "3rem" }}
         gap="2rem"
+        role="complementary"
+        aria-label="staff section"
       >
-        <Text variant="subHeader" color="darkestBlue">
+        <Text variant="subHeader" color="darkestBlue" aria-description="course staff">
           pooh + friends!
         </Text>
         <Flex

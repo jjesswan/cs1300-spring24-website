@@ -29,7 +29,9 @@ interface StaffInfo{
 export default function StaffMember(props: StaffInfo) {
     const [avatarImg, setImg] = useState<string>(props.pooh);
   return (
-    <Card bg="transparent" direction="row" w={{ md: "25rem", base: "30rem" }} shadow={"none"}>
+    <Card bg="transparent" direction="row" w={{ md: "25rem", base: "30rem" }} shadow={"none"}
+    role="complementary"
+    aria-label={props.name + " information card"}>
       <Image
         objectFit="contain"
         maxWidth="40%"
@@ -38,6 +40,7 @@ export default function StaffMember(props: StaffInfo) {
         onMouseOver={() => setImg(props.real)}
         onMouseLeave={() => setImg(props.pooh)}
         padding="1.5rem"
+        aria-label={props.name + " image"}
       />
       <Stack
         alignItems={"flex-start"}
@@ -56,7 +59,7 @@ export default function StaffMember(props: StaffInfo) {
           >
             {props.name}
           </Text>
-          <Text variant="subscript">{props.desc}</Text>
+          <Text variant="subscript" aria-label={props.name + " description"}>{props.desc}</Text>
         </CardBody>
       </Stack>
     </Card>
