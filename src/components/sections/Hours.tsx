@@ -31,7 +31,7 @@ export default function Hours() {
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
-        px={{ md: "10%",lg: "20%", base: "3rem" }}
+        px={{ md: "10%", lg: "20%", base: "3rem" }}
         role="complementary"
         aria-label="ta hours section"
       >
@@ -47,10 +47,18 @@ export default function Hours() {
         </Text>
         <Link to="/">
           <Button
-            variant="outlineLink"
-            borderColor="white"
-            color="white"
-            mb="1.5rem"
+            variant="solidLink"
+            bg="white"
+            borderColor={"transparent"}
+            color="black"
+            _hover={{
+              color: "black",
+              fontSize: ".8rem",
+              transition: "all 0.4s",
+              bg: "transparent",
+              borderColor: "black",
+            }}
+            mb="2rem"
           >
             GCAL LINK
           </Button>

@@ -15,10 +15,11 @@ const colors = {
   red: "#CB2121",
   lightBlue: "#ADE2FF",
   darkBlue: "#7BD0FF",
-  darkestBlue: "#22709C",
+  darkestBlue: "#3C6278",
   darkGrey: "#313946",
   mediumGrey: "#38475B",
-  lightGrey: "#ABC1E0",
+  lightGrey: "#B6B6B6",
+  brown: "#5D3011",
 };
 
 const fonts = {
@@ -36,12 +37,13 @@ const components = {
         fontFamily: fonts.body,
         textTransform: "uppercase",
         fontWeight: "500",
-        border: "2px solid",
-        borderRadius: ".8rem",
+        border: "1px solid",
+        borderRadius: ".7rem",
         borderColor: colors.mediumGrey,
         letterSpacing: ".02rem",
         color: colors.mediumGrey,
         width: "10rem",
+        height: "2.2rem",
         bg: "white",
         _hover: {
           color: "white",
@@ -49,7 +51,7 @@ const components = {
           textDecoration: "none",
           transition: "all 0.4s",
           bg: "transparent",
-          border: "2px solid white",
+          border: "1px solid white",
         },
       }),
       solidLinkSmall: () => ({
@@ -58,15 +60,18 @@ const components = {
         fontWeight: "500",
         borderRadius: ".5rem",
         letterSpacing: ".02rem",
-        color: colors.lightGrey,
+        color: colors.lightBlue,
+        border: "1px solid",
+        borderColor: colors.darkBlue,
         width: "10rem",
         height: "2rem",
-        bg: colors.mediumGrey,
         _hover: {
-          color: "white",
+          color: colors.darkGrey,
           textDecoration: "none",
           transition: "all 0.4s",
           opacity: "1",
+          bg: colors.darkBlue,
+          fontSize: ".8rem",
         },
       }),
       outlineLink: () => ({
@@ -92,19 +97,9 @@ const components = {
     },
   },
 
-  Divider: {
-    variants: {
-      thick: () => ({
-        borderWidth: ".6rem", // change the width of the border
-        borderStyle: "solid", // change the style of the border
-        borderRadius: 10,
-      }),
-    },
-  },
-
   Link: {
     variants: {
-      navLink: () => ({
+      navLink1: () => ({
         fontFamily: fonts.body,
         fontSize: "1rem",
         fontWeight: "500",
@@ -115,6 +110,21 @@ const components = {
         color: "black",
         _hover: {
           color: "white",
+          textDecoration: "none",
+          transition: "all 0.4s",
+        },
+      }),
+      navLink2: () => ({
+        fontFamily: fonts.body,
+        fontSize: "1rem",
+        fontWeight: "500",
+        letterSpacing: "-.05rem",
+        paddingX: "1rem",
+        textDecoration: "none",
+        transition: "all 0.4s",
+        color: "black",
+        _hover: {
+          color: "lightGrey",
           textDecoration: "none",
           transition: "all 0.4s",
         },
@@ -133,23 +143,6 @@ const components = {
           transition: "all 0.4s",
         },
       }),
-      helpfulLink: () => ({
-        fontFamily: fonts.body,
-        fontSize: ".9rem",
-        fontWeight: "500",
-        letterSpacing: "-.05rem",
-        paddingX: "1rem",
-        textDecoration: "none",
-        transition: "all 0.4s",
-        color: colors.lightGrey,
-        textTransform: "lowercase",
-        _hover: {
-          color: colors.lightBlue,
-          textDecoration: "none",
-          fontSize: "1rem",
-          transition: "all 0.4s",
-        },
-      }),
     },
   },
   Text: {
@@ -160,7 +153,7 @@ const components = {
         fontWeight: "800",
         fontSize: "4rem",
         color: "black",
-        lineHeight: "100%"
+        lineHeight: "100%",
       }),
       subHeader: () => ({
         fontFamily: fonts.heading,
@@ -177,22 +170,22 @@ const components = {
       subtitle: () => ({
         fontFamily: fonts.body,
         fontWeight: "800",
-        fontSize: {sm:"1.5rem", base:"1rem"},
+        fontSize: { sm: "1.5rem", base: "1rem" },
         letterSpacing: "-.05rem",
-        lineHeight:"100%",
+        lineHeight: "100%",
         textAlign: "center",
         color: colors.darkGrey,
       }),
       body: () => ({
         fontFamily: fonts.body,
         fontWeight: "500",
-        fontSize: ".7rem",
+        fontSize: ".8rem",
         textAlign: "center",
       }),
       subscript: () => ({
         fontFamily: fonts.body,
         fontWeight: "500",
-        fontSize: ".7rem",
+        fontSize: ".75rem",
         textAlign: "justify",
         color: colors.mediumGrey,
       }),

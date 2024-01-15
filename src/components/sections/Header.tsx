@@ -24,7 +24,7 @@ export default function Header() {
           src="/images/Header final.png"
         />
         <Flex flexDir={"column"} alignItems={"center"}>
-          <Text variant="bigHeader" color="#5D3011">
+          <Text variant="bigHeader" color="brown">
             welcome to
           </Text>
 

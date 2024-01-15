@@ -43,12 +43,12 @@ export default function Links() {
                 WEBSITES
               </Text>
               <Link to="/">
-                <Button variant="solidLink" mb="1rem">
+                <Button variant="solidLinkSmall" mb="1rem">
                   CANVAS
                 </Button>
               </Link>
               <Link to="/">
-                <Button variant="solidLink">EDSTEM</Button>
+                <Button variant="solidLinkSmall">EDSTEM</Button>
               </Link>
             </Flex>
 
@@ -58,17 +58,17 @@ export default function Links() {
                 Course Docs
               </Text>
               <Link to="/">
-                <Button variant="outlineLink" mb="1rem">
+                <Button variant="solidLinkSmall" mb="1rem">
                   Syllabus
                 </Button>
               </Link>
               <Link to="/">
-                <Button variant="outlineLink" mb="1rem">
+                <Button variant="solidLinkSmall" mb="1rem">
                   Software Guide
                 </Button>
               </Link>
               <Link to="/">
-                <Button variant="outlineLink">Deployment Guide</Button>
+                <Button variant="solidLinkSmall">Deployment Guide</Button>
               </Link>
             </Flex>
           </Flex>

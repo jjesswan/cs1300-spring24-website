@@ -43,7 +43,7 @@ export default function Assignment() {
 
         <Link to={currAssignment.handoutLink ? currAssignment.handoutLink : "/"}>
           <Button
-            variant="solidLinkSmall"
+            variant="solidLink"
             bg={currAssignment.handinLink ? "yellow" : "mediumGrey"}
             disabled={currAssignment.handinLink == null}
             color="darkGrey"
@@ -53,7 +53,7 @@ export default function Assignment() {
         </Link>
         <Link to={currAssignment.handinLink ? currAssignment.handinLink : "/"}>
           <Button
-            variant="solidLinkSmall"
+            variant="solidLink"
             bg={currAssignment.handinLink ? "yellow" : "mediumGrey"}
             disabled={currAssignment.handinLink == null}
             color="darkGrey"

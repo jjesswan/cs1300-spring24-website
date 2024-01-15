@@ -59,12 +59,15 @@ export default function Schedule() {
             variant="solidLink"
             bg="yellow"
             borderColor={"transparent"}
-            color="white"
+            color="black"
             _hover={{
               color: "black",
-              borderColor: "black",
+              fontSize: ".8rem",
+              transition: "all 0.4s",
               bg: "transparent",
+              borderColor: "black",
             }}
+            mb="2rem"
           >
             SCHEDULE LINK
           </Button>

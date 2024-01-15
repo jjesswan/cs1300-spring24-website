@@ -21,73 +21,78 @@ export default function SideNav(props: SideNavProps) {
     
   
   return (
-    <Slide direction='left' in={props.open} style={{ zIndex: "10000" }} unmountOnExit>
-
-    <Box
-      position={"fixed"}
-      zIndex={"sticky"}
-      transition={"all .4s"}
-      role="navigation"
-      aria-label="mobile navigation"
+    <Slide
+      direction="left"
+      in={props.open}
+      style={{ zIndex: "10000" }}
+      unmountOnExit
     >
-      <Flex
+      <Box
         position={"fixed"}
-        minH={"100vh"}
-        minWidth={"70vw"}
-        w="70vw"
-        h="100vh"
-        bg={"darkGrey"}
-        borderRightRadius={".5rem"}
-        py="1rem"
-        pl="2rem"
-        pr="1rem"
-        flexDir={"column"}
+        zIndex={"sticky"}
+        transition={"all .4s"}
+        role="navigation"
+        aria-label="mobile navigation"
       >
         <Flex
-          w="100%"
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          mb="2rem"
+          position={"fixed"}
+          minH={"100vh"}
+          minWidth={"70vw"}
+          w="70vw"
+          h="100vh"
+          bg={"darkGrey"}
+          borderRightRadius={".5rem"}
+          py="1rem"
+          pl="2rem"
+          pr="1rem"
+          flexDir={"column"}
+          boxShadow="lg"
         >
-          <Text variant="tinyHeader" fontSize={"2rem"}>
-            ui/ux
-          </Text>
-          <IconButton
-            aria-label="Close Sidebar Navigation"
-            bg="transparent"
-            padding={"0"}
-            margin="0"
-            icon={<TiTimes size="2rem" color="white" />}
-            onClick={closeNav}
-          />
+          <Flex
+            w="100%"
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            mb="2rem"
+          >
+            <Text variant="tinyHeader" fontSize={"2rem"}>
+              ui/ux
+            </Text>
+            <IconButton
+              aria-label="Close Sidebar Navigation"
+              bg="transparent"
+              padding={"0"}
+              margin="0"
+              icon={<TiTimes size="2rem" color="white" />}
+              onClick={closeNav}
+            />
+          </Flex>
+          <HashLink smooth to="/#links" variant="navLink" pr="0">
+            <ChakraLink variant={"sideLink"} onClick={closeNav}>
+              links
+            </ChakraLink>
+          </HashLink>
+          <HashLink smooth to="/#schedule" variant="navLink" pr="0">
+            <ChakraLink variant={"sideLink"} onClick={closeNav}>
+              schedule
+            </ChakraLink>
+          </HashLink>
+          <HashLink smooth to="/#hours" variant="navLink" pr="0">
+            <ChakraLink variant={"sideLink"} onClick={closeNav}>
+              hours
+            </ChakraLink>
+          </HashLink>
+          <HashLink smooth to="/#staff" variant="navLink" pr="0">
+            <ChakraLink variant={"sideLink"} onClick={closeNav}>
+              staff
+            </ChakraLink>
+          </HashLink>
+          <HashLink smooth to="/#faq" variant="navLink" pr="0">
+            <ChakraLink variant={"sideLink"} onClick={closeNav}>
+              faq
+            </ChakraLink>
+          </HashLink>
         </Flex>
-        <HashLink smooth to="/#links" variant="navLink" pr="0">
-          <ChakraLink variant={"sideLink"} onClick={closeNav}>
-            links
-          </ChakraLink>
-        </HashLink>
-        <HashLink smooth to="/#schedule" variant="navLink" pr="0">
-          <ChakraLink variant={"sideLink"} onClick={closeNav}>
-            schedule
-          </ChakraLink>
-        </HashLink>
-        <HashLink smooth to="/#hours" variant="navLink" pr="0">
-          <ChakraLink variant={"sideLink"} onClick={closeNav}>
-            hours
-          </ChakraLink>
-        </HashLink>
-        <HashLink smooth to="/#staff" variant="navLink" pr="0">
-          <ChakraLink variant={"sideLink"} onClick={closeNav}>
-            staff
-          </ChakraLink>
-        </HashLink>
-        <HashLink smooth to="/#faq" variant="navLink" pr="0">
-          <ChakraLink variant={"sideLink"} onClick={closeNav}>
-            faq
-          </ChakraLink>
-        </HashLink>
-      </Flex>
-    </Box>
+      </Box>
     </Slide>
   );
 }

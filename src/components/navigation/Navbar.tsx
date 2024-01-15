@@ -23,7 +23,13 @@ export default function Navbar() {
 
   
   return (
-    <Box position={"fixed"} zIndex={"sticky"} display={{md: "flex", base: "none"}} role="navigation" aria-label="desktop navigation">
+    <Box
+      position={"fixed"}
+      zIndex={"sticky"}
+      display={{ md: "flex", base: "none" }}
+      role="navigation"
+      aria-label="desktop navigation"
+    >
       <Flex
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -35,28 +41,40 @@ export default function Navbar() {
         m={0}
         transition={"all .2s"}
         borderBottomRadius={"1rem"}
-        boxShadow={bgColor == "yellow"? "0" : "md"}
+        boxShadow={bgColor == "yellow" ? "0" : "md"}
       >
         <Flex>
           <HashLink smooth to="/#top" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>home</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              home
+            </ChakraLink>
           </HashLink>
         </Flex>
         <Flex>
           <HashLink smooth to="/#links" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>links</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              links
+            </ChakraLink>
           </HashLink>
           <HashLink smooth to="/#schedule" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>schedule</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              schedule
+            </ChakraLink>
           </HashLink>
           <HashLink smooth to="/#hours" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>hours</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              hours
+            </ChakraLink>
           </HashLink>
           <HashLink smooth to="/#staff" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>staff</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              staff
+            </ChakraLink>
           </HashLink>
           <HashLink smooth to="/#faq" variant="navLink" pr="0">
-            <ChakraLink variant={"navLink"}>faq</ChakraLink>
+            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
+              faq
+            </ChakraLink>
           </HashLink>
         </Flex>
       </Flex>
