@@ -19,7 +19,7 @@ export default function Schedule() {
       <Flex
         justifyContent={"flex-start"}
         alignItems={"center"}
-        bg="white"
+        bg="yellow"
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
@@ -27,24 +27,7 @@ export default function Schedule() {
         role="complementary"
         aria-label="current events section"
       >
-        <Text variant="subHeader" mb="1.5rem">
-          current to-do's
-        </Text>
-
-        <Flex
-          w="100%"
-          justifyContent={{ md: "space-evenly", base: "center" }}
-          alignItems={{ md: "center", base: "center" }}
-          mb="3rem"
-          flexDir={{ md: "row", base: "column" }}
-          gap="1rem"
-        >
-          <Assignment />
-          <Studio />
-          <Readings />
-        </Flex>
-
-        <Text variant="subHeader">schedule</Text>
+        <Text variant="subHeader" color="darkGrey">schedule</Text>
         <Text variant="subscript" mb="1.5rem" w="70%">
           We highly recommend bookmarking this schedule, as this contains all
           information regarding assignments, lectures, studios, and readings.
@@ -57,15 +40,14 @@ export default function Schedule() {
         <Link to="/">
           <Button
             variant="solidLink"
-            bg="yellow"
+            bg="white"
             borderColor={"transparent"}
-            color="black"
+            color="darkGrey"
             _hover={{
-              color: "black",
               fontSize: ".8rem",
               transition: "all 0.4s",
               bg: "transparent",
-              borderColor: "black",
+              borderColor: "darkGrey",
             }}
             mb="2rem"
           >

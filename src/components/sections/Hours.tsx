@@ -27,7 +27,7 @@ export default function Hours() {
       <Flex
         justifyContent={"flex-start"}
         alignItems={"center"}
-        bg="lightBlue"
+        bg="darkGrey"
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
@@ -35,8 +35,8 @@ export default function Hours() {
         role="complementary"
         aria-label="ta hours section"
       >
-        <Text variant="subHeader">hours</Text>
-        <Text variant="subscript" mb="1.5rem" w="70%">
+        <Text variant="subHeader" color="white">hours</Text>
+        <Text variant="subscript" mb="1.5rem" w="70%" color="white">
           We highly recommend bookmarking this schedule, as this contains all
           information regarding assignments, lectures, studios, and readings.
           <br></br>
@@ -48,15 +48,15 @@ export default function Hours() {
         <Link to="/">
           <Button
             variant="solidLink"
-            bg="white"
+            bg="yellow"
             borderColor={"transparent"}
-            color="black"
+            color="darkGrey"
             _hover={{
-              color: "black",
+              color: "yellow",
               fontSize: ".8rem",
               transition: "all 0.4s",
               bg: "transparent",
-              borderColor: "black",
+              borderColor: "yellow",
             }}
             mb="2rem"
           >

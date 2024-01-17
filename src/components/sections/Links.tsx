@@ -30,16 +30,16 @@ export default function Links() {
           justifyContent={"center"}
           w="90%"
           flexDir={{ sm: "row", base: "column" }}
-          gap={"1rem"}
+          gap={"2rem"}
         >
           {/* WEBSITES */}
           <Flex
             flexDir={{ md: "row", base: "column" }}
-            alignItems={"center"}
-            gap={"1rem"}
+            alignItems={"flex-start"}
+            gap={"2rem"}
           >
-            <Flex flexDir={"column"} alignItems={"center"}>
-              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+            <Flex flexDir={"column"}>
+              <Text variant="capitalBody" color="lightGrey" mb=".5rem">
                 WEBSITES
               </Text>
               <Link to="/">
@@ -53,8 +53,8 @@ export default function Links() {
             </Flex>
 
             {/* COURSE DOCS */}
-            <Flex flexDir={"column"} alignItems={"center"}>
-              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+            <Flex flexDir={"column"}>
+              <Text variant="capitalBody" color="lightGrey" mb=".5rem">
                 Course Docs
               </Text>
               <Link to="/">
@@ -75,12 +75,12 @@ export default function Links() {
 
           <Flex
             flexDir={{ md: "row", base: "column" }}
-            alignItems={"center"}
-            gap={"1rem"}
+            alignItems={"flex-start"}
+            gap={"2rem"}
           >
             {/* COURSE FORMS */}
-            <Flex flexDir={"column"} alignItems={"center"}>
-              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+            <Flex flexDir={"column"}>
+              <Text variant="capitalBody" color="lightGrey" mb=".5rem">
                 ASSIGNMENTS
               </Text>
               <Link to="/">
@@ -110,8 +110,8 @@ export default function Links() {
             </Flex>
 
             {/* LOGISTICAL */}
-            <Flex flexDir={"column"} alignItems={"center"}>
-              <Text variant="capitalBody" color="darkBlue" mb=".5rem">
+            <Flex flexDir={"column"}>
+              <Text variant="capitalBody" color="lightGrey" mb=".5rem">
                 logistical
               </Text>
               <Link to="/">

@@ -20,6 +20,7 @@ const colors = {
   mediumGrey: "#38475B",
   lightGrey: "#B6B6B6",
   brown: "#5D3011",
+  offWhite: "#F8F8F8",
 };
 
 const fonts = {
@@ -55,23 +56,26 @@ const components = {
         },
       }),
       solidLinkSmall: () => ({
-        fontSize: ".7rem",
+        fontSize: ".8rem",
         fontFamily: fonts.body,
         fontWeight: "500",
-        borderRadius: ".5rem",
         letterSpacing: ".02rem",
-        color: colors.lightBlue,
-        border: "1px solid",
-        borderColor: colors.darkBlue,
-        width: "10rem",
-        height: "2rem",
+        color: "white",
+        borderBottom: "3px solid",
+        borderColor: colors.yellow,
+        borderRadius: "0",
+        height: "1.5rem",
+        textTransform: "lowercase",
+        textAlign: "left",
+        padding: "2px",
         _hover: {
           color: colors.darkGrey,
           textDecoration: "none",
-          transition: "all 0.4s",
+          transition: "all 1s",
           opacity: "1",
-          bg: colors.darkBlue,
+          bg: colors.yellow,
           fontSize: ".8rem",
+          borderRadius: "2px",
         },
       }),
       outlineLink: () => ({

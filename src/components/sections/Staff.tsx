@@ -19,7 +19,7 @@ export default function Staff() {
       <Flex
         justifyContent={"flex-start"}
         alignItems={"center"}
-        bg="#F8F8F8"
+        bg="offWhite"
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
@@ -28,7 +28,7 @@ export default function Staff() {
         role="complementary"
         aria-label="staff section"
       >
-        <Text variant="subHeader" color="darkestBlue" aria-description="course staff">
+        <Text variant="subHeader" color="darkGrey" aria-description="course staff">
           pooh + friends!
         </Text>
         <Flex

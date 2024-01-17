@@ -8,6 +8,7 @@ import Hours from "./sections/Hours";
 import Staff from "./sections/Staff";
 import Faq from "./sections/Faq";
 import Footer from "./Footer";
+import Todo from "./sections/Todo";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <div role="main">
       <Header />
       <Links />
+      <Todo/>
       <Schedule/>
       <Hours/>
       <Staff/>
