@@ -41,22 +41,22 @@ export default function Assignment() {
           Due: {currAssignment.due}
         </Text>
 
-        <Link to={currAssignment.handoutLink ? currAssignment.handoutLink : "/"}>
+        <Link
+          to={currAssignment.handoutLink ? currAssignment.handoutLink : "/"}
+        >
           <Button
-            variant="solidLink"
-            bg={currAssignment.handinLink ? "yellow" : "mediumGrey"}
+            variant={currAssignment.handinLink ? "solidLink" : "disabled"}
             disabled={currAssignment.handinLink == null}
-            color="darkGrey"
+            cursor={currAssignment.handinLink ? "pointer" : "default"}
           >
             HANDOUT
           </Button>
         </Link>
         <Link to={currAssignment.handinLink ? currAssignment.handinLink : "/"}>
           <Button
-            variant="solidLink"
-            bg={currAssignment.handinLink ? "yellow" : "mediumGrey"}
+            variant={currAssignment.handinLink ? "solidLink" : "disabled"}
             disabled={currAssignment.handinLink == null}
-            color="darkGrey"
+            cursor={currAssignment.handinLink ? "pointer" : "default"}
           >
             HANDIN
           </Button>

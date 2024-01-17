@@ -42,7 +42,7 @@ export default function Todo() {
         <Flex
           w="100%"
           justifyContent={{ md: "space-evenly", base: "center" }}
-          alignItems={{ md: "center", base: "center" }}
+          alignItems={{ md: "flex-start", base: "center" }}
           flexDir={{ md: "row", base: "column" }}
           gap="1rem"
         >
