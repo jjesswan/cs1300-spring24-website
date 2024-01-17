@@ -1,7 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
+import { Link as ChakraLink, LinkProps, Image } from "@chakra-ui/react";
 import { HashLink } from "react-router-hash-link";
 
 
@@ -45,9 +45,11 @@ export default function Navbar() {
       >
         <Flex>
           <HashLink smooth to="/#top" variant="navLink" pr="0">
-            <ChakraLink variant={bgColor == "yellow" ? "navLink1" : "navLink2"}>
-              home
-            </ChakraLink>
+            <Image
+              objectFit="contain"
+              maxWidth="2rem"
+              src="/images/home_icon.png"
+            />
           </HashLink>
         </Flex>
         <Flex>

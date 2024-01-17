@@ -35,7 +35,9 @@ export default function Hours() {
         role="complementary"
         aria-label="ta hours section"
       >
-        <Text variant="subHeader" color="white">hours</Text>
+        <Text variant="subHeader" color="white">
+          hours
+        </Text>
         <Text variant="subscript" mb="1.5rem" w="70%" color="white">
           We highly recommend bookmarking this schedule, as this contains all
           information regarding assignments, lectures, studios, and readings.
@@ -64,9 +66,9 @@ export default function Hours() {
           </Button>
         </Link>
         <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showNav=1&showDate=1&showPrint=1&showTabs=1&showCalendars=0&showTz=1&src=Y18wNDZhODRmOTUyOTNkZTYzZWQ2ZWUxMjQ3OGY3MzUxMTNlNDUzZGFkZmIzYTM4NDk5YWI5OTg5NWQ1M2ExMjZlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23B39DDB"
           width="100%"
           height="500px"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%237bd0ff&ctz=America%2FNew_York&title=UI%2FUX%20TA%20Hours&showTabs=1&showCalendars=1&showTz=0&src=Y18wNDZhODRmOTUyOTNkZTYzZWQ2ZWUxMjQ3OGY3MzUxMTNlNDUzZGFkZmIzYTM4NDk5YWI5OTg5NWQ1M2ExMjZlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23B39DDB"
         ></iframe>
       </Flex>
     </div>
