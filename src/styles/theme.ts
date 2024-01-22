@@ -162,6 +162,19 @@ const components = {
           transition: "all 0.4s",
         },
       }),
+      embedLink: () => ({
+        fontFamily: fonts.body,
+        fontWeight: "500",
+        letterSpacing: "-.05rem",
+        textDecoration: "underline",
+        transition: "all 0.4s",
+        color: colors.yellow,
+        paddingX: ".2rem",
+        _hover: {
+          color: "lightGrey",
+          transition: "all 0.4s",
+        },
+      }),
     },
   },
   Text: {

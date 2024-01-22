@@ -38,16 +38,23 @@ export default function Hours() {
         <Text variant="subHeader" color="white">
           hours
         </Text>
-        <Text variant="subscript" mb="1.5rem" w="70%" color="white">
-          We highly recommend bookmarking this schedule, as this contains all
-          information regarding assignments, lectures, studios, and readings.
-          <br></br>
-          <br></br>
-          Note: slides and lecture capture are firstly and always available on
-          Canvas in the Files and Media Library folders, respectively. The links
-          in the schedule below are added later only for convenience.
+        <Text
+          variant="subscript"
+          mb="1.5rem"
+          w="70%"
+          color="white"
+          textAlign={"center"}
+        >
+          To sign up for hours, visit
+          <ChakraLink
+            as={ReactRouterLink}
+            to="https://hours.cs.brown.edu/"
+            variant={"embedLink"}
+          >
+            HOURS
+          </ChakraLink>
         </Text>
-        <Link to="/">
+        <Link to="https://calendar.google.com/calendar/u/0?cid=Y18wNDZhODRmOTUyOTNkZTYzZWQ2ZWUxMjQ3OGY3MzUxMTNlNDUzZGFkZmIzYTM4NDk5YWI5OTg5NWQ1M2ExMjZlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
           <Button
             variant="solidLink"
             bg="yellow"
