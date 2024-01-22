@@ -13,15 +13,17 @@ import Todo from "./sections/Todo";
 
 export default function Home() {
   return (
-    <div role="main">
-      <Header />
-      <Links />
-      <Todo/>
-      <Schedule/>
-      <Hours/>
-      <Staff/>
-      <Faq/>
-      <Footer/>
-    </div>
+    <Header />
+
+    // <div role="main">
+    //   <Header />
+    //   <Links />
+    //   <Todo/>
+    //   <Schedule/>
+    //   <Hours/>
+    //   <Staff/>
+    //   <Faq/>
+    //   <Footer/>
+    // </div>
   );
 }

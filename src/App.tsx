@@ -15,11 +15,10 @@ import Navigation from "./components/navigation/Navigation"
  
 
 export const App = () => (
-
   <ChakraProvider theme={customTheme}>
     <BrowserRouter>
       {/* <Navbar /> */}
-      <Navigation/>
+      <Navigation />
 
       <Routes>
         <Route path="/" element={<Home />} />
