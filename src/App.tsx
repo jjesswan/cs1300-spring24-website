@@ -21,9 +21,6 @@ export default function App(){
         {/* <Navbar /> */}
         <Navigation />
         <Home/>
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes> */}
       </BrowserRouter>
     </ChakraProvider>
   );

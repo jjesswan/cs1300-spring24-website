@@ -21,7 +21,7 @@ export default function Header() {
         <Image
           objectFit="contain"
           maxWidth={{ md: "50%", base: "90vw" }}
-          src="/images/Header final.png"
+          src="/images/Header final.jpg"
         />
         <Flex flexDir={"column"} alignItems={"center"}>
           <Text variant="bigHeader" color="brown">
