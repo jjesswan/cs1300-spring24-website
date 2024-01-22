@@ -14,15 +14,17 @@ import Navigation from "./components/navigation/Navigation"
 
  
 
-export const App = () => (
-  <ChakraProvider theme={customTheme}>
-    <BrowserRouter>
-      {/* <Navbar /> */}
-      <Navigation />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  </ChakraProvider>
-);
+export default function App(){
+  return (
+    <ChakraProvider theme={customTheme}>
+      <BrowserRouter>
+        {/* <Navbar /> */}
+        <Navigation />
+        <Home/>
+        {/* <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes> */}
+      </BrowserRouter>
+    </ChakraProvider>
+  );
+}
