@@ -36,10 +36,10 @@ export default function Header() {
           >
             csci1300
           </Text>
-          <Text variant="capitalBody" color="red">
+          <Text variant="capitalBody" color="brown">
             tues/thurs 1-2:20pm
           </Text>
-          <Text variant="capitalBody" color="red">
+          <Text variant="capitalBody" color="brown">
             metcalf auditorium
           </Text>
         </Flex>

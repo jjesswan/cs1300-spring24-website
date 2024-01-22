@@ -23,7 +23,7 @@ export default function Staff() {
         flexDir={"column"}
         pt="3rem"
         pb="5rem"
-        px={{ md: "10%", lg: "15%", base: "3rem" }}
+        px={{ md: "10%", base: "3rem" }}
         gap="2rem"
         role="complementary"
         aria-label="staff section"
